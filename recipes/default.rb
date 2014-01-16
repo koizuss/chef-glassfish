@@ -67,6 +67,8 @@ chmod -R ugo-w #{node['glassfish']['base_dir']}
 chmod u+w #{node['glassfish']['base_dir']}
 rm -rf #{node['glassfish']['base_dir']}/glassfish/domains/domain1
 test -d #{node['glassfish']['base_dir']}
+mkdir -p #{node['glassfish']['base_dir']}/glassfish/lib/templates/domain.xml
+test -d #{node['glassfish']['base_dir']}/glassfish/lib/templates/domain.xml
 EOF
 end
 
